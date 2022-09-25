@@ -12,7 +12,7 @@ COPY . .
 
 RUN dotnet publish "OrderProcessingWorker.csproj" -c Release -o /publish
 
-FROM mcr.microsoft.com/dotnet/aspnet:2.1 as final
+FROM mcr.microsoft.com/dotnet/aspnet:5.0 as final
 WORKDIR /app
 COPY --from=build /publish .
 ENTRYPOINT [ "dotnet", "OrderProcessingWorker.dll" ]
