@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk.Worker">
 
   <PropertyGroup>
-    <TargetFramework>net2.1</TargetFramework>
+    <TargetFramework>net5.0</TargetFramework>
     <UserSecretsId>dotnet-OrderProcessingWorker-47698EB2-F641-4538-A045-B1AAEDCCDAA2</UserSecretsId>
     <PreserveCompilationContext>true</PreserveCompilationContext>
   </PropertyGroup>
